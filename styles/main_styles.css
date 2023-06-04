@@ -581,7 +581,7 @@ section {
    top: 0;
    right: -400px;
    width: 400px;
-   height: 100vh;
+   height: 1200vh;
    background: #ffffff;
    z-index: 101;
    padding-right: 60px;
@@ -786,7 +786,7 @@ section {
 
 .home {
    width: 100%;
-   height: 77vh;
+   height: 100vh;
 }
 .home_slider_container {
    width: 100%;
@@ -825,7 +825,7 @@ section {
    max-width: 100%;
 }
 .home_text {
-   margin-top: -55px;
+   margin-top: -50px;
 }
 .home_title {
    width: 100%;
@@ -1285,7 +1285,7 @@ section {
    color: #44425a;
 }
 .accordions {
-   margin-top: 7px;
+   margin-bottom: 14px;
 }
 .accordion_container:not(:last-child) {
    margin-bottom: 14px;
