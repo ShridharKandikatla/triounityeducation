@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Courses</title>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Elearn project" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="styles/bootstrap4/bootstrap.min.css"
+      />
+      <link
+         href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <link
+         href="plugins/video-js/video-js.css"
+         rel="stylesheet"
+         type="text/css"
+      />
+      <link rel="stylesheet" type="text/css" href="styles/courses.css" />
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="styles/courses_responsive.css"
+      />
+      <script nonce="0c697e6d-8d7b-440f-b491-7e8281e16f5b">
+         (function (w, d) {
+            !(function (Y, Z, _, ba) {
+               Y[_] = Y[_] || {};
+               Y[_].executed = [];
+               Y.zaraz = { deferred: [], listeners: [] };
+               Y.zaraz.q = [];
+               Y.zaraz._f = function (bb) {
+                  return function () {
+                     var bc = Array.prototype.slice.call(arguments);
+                     Y.zaraz.q.push({ m: bb, a: bc });
+                  };
+               };
+               for (const bd of ["track", "set", "debug"])
+                  Y.zaraz[bd] = Y.zaraz._f(bd);
+               Y.zaraz.init = () => {
+                  var be = Z.getElementsByTagName(ba)[0],
+                     bf = Z.createElement(ba),
+                     bg = Z.getElementsByTagName("title")[0];
+                  bg && (Y[_].t = Z.getElementsByTagName("title")[0].text);
+                  Y[_].x = Math.random();
+                  Y[_].w = Y.screen.width;
+                  Y[_].h = Y.screen.height;
+                  Y[_].j = Y.innerHeight;
+                  Y[_].e = Y.innerWidth;
+                  Y[_].l = Y.location.href;
+                  Y[_].r = Z.referrer;
+                  Y[_].k = Y.screen.colorDepth;
+                  Y[_].n = Z.characterSet;
+                  Y[_].o = new Date().getTimezoneOffset();
+                  if (Y.dataLayer)
+                     for (const bk of Object.entries(
+                        Object.entries(dataLayer).reduce(
+                           (bl, bm) => ({ ...bl[1], ...bm[1] }),
+                           {}
+                        )
+                     ))
+                        zaraz.set(bk[0], bk[1], { scope: "page" });
+                  Y[_].q = [];
+                  for (; Y.zaraz.q.length; ) {
+                     const bn = Y.zaraz.q.shift();
+                     Y[_].q.push(bn);
+                  }
+                  bf.defer = !0;
+                  for (const bo of [localStorage, sessionStorage])
+                     Object.keys(bo || {})
+                        .filter((bq) => bq.startsWith("_zaraz_"))
+                        .forEach((bp) => {
+                           try {
+                              Y[_]["z_" + bp.slice(7)] = JSON.parse(
+                                 bo.getItem(bp)
+                              );
+                           } catch {
+                              Y[_]["z_" + bp.slice(7)] = bo.getItem(bp);
+                           }
+                        });
+                  bf.referrerPolicy = "origin";
+                  bf.src =
+                     "/cdn-cgi/zaraz/s.js?z=" +
+                     btoa(encodeURIComponent(JSON.stringify(Y[_])));
+                  be.parentNode.insertBefore(bf, be);
+               };
+               ["complete", "interactive"].includes(Z.readyState)
+                  ? zaraz.init()
+                  : Y.addEventListener("DOMContentLoaded", zaraz.init);
+            })(w, d, "zarazData", "script");
+         })(window, document);
+      </script>
+   </head>
+   <body>
+      <div class="super_container">
+         <header class="header">
+            <div class="header_container">
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <div
+                           class="header_content d-flex flex-row align-items-center justify-content-start"
+                        >
+                           <div class="logo_container">
+                              <a href="#">
+                                 <div
+                                    class="logo_content d-flex flex-row align-items-end justify-content-start"
+                                 >
+                                    <div class="logo_img">
+                                       <img src="images/logo.png" alt="" />
+                                    </div>
+                                    <div class="logo_text">learn</div>
+                                 </div>
+                              </a>
+                           </div>
+                           <nav class="main_nav_contaner ml-auto">
+                              <ul class="main_nav">
+                                 <li class="active">
+                                    <a href="index.html">home</a>
+                                 </li>
+                                 <li><a href="about.html">about us</a></li>
+                                 <li><a href="courses.html">courses</a></li>
+                                 <li><a href="contact.html">contact</a></li>
+                              </ul>
+
+                              <div class="hamburger menu_mm">
+                                 <i
+                                    class="fa fa-bars menu_mm"
+                                    aria-hidden="true"
+                                 ></i>
+                              </div>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <div
+            class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400"
+         >
+            <div class="menu_close_container">
+               <div class="menu_close">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+
+            <nav class="menu_nav">
+               <ul class="menu_mm">
+                  <li class="menu_mm"><a href="index.html">Home</a></li>
+                  <li class="menu_mm"><a href="courses.html">Courses</a></li>
+                  <li class="menu_mm"><a href="about.html">About Us</a></li>
+                  <li class="menu_mm"><a href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+
+         <div class="home">
+            <div
+               class="home_background parallax_background parallax-window"
+               data-parallax="scroll"
+               data-image-src="images/courses.jpg"
+               data-speed="0.8"
+            ></div>
+            <div class="home_container">
+               <div class="container">
+                  <div class="row">
+                     <div class="col">
+                        <div class="home_content text-center">
+                           <div class="home_title">Courses We Offer</div>
+                           <div class="breadcrumbs">
+                              <ul>
+                                 <li><a href="index.html">Home</a></li>
+                                 <li>Courses</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="courses">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                     <div class="section_title text-center">
+                        <h2>Choose your course</h2>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="row courses_row">
+                  <div class="col-lg-6 col-md-6">
+                     <div class="course">
+                        <div class="course_image">
+                           <img src="images/course_1.jpg" alt="" />
+                        </div>
+                        <div class="course_body">
+                           <div class="course_title">
+                              <h3>
+                                 <a href="courses.html">MBA Courses</a>
+                              </h3>
+                           </div>
+                           <div class="course_text">
+                              We offer 2 years long MBA programs in various
+                              industry-aligned specializations for your
+                              structured professional growth.
+                           </div>
+                           <div class="course_text">
+                              <ul>
+                                 <li><b>* </b> Marketing Management</li>
+
+                                 <li><b>* </b>Financial Management</li>
+                                 <li><b>* </b>Business Management</li>
+                                 <li><b>* </b>Human Resource Management</li>
+                                 <li>
+                                    <b>* </b>International Trade Management
+                                 </li>
+                                 <li>
+                                    <b>* </b>Banking and Finance Management
+                                 </li>
+                                 <li><b>* </b>Supply Chain Management</li>
+                                 <li><b>* </b>Operations Management</li>
+                                 <li><b>* </b>Retail Management</li>
+                                 <li><b>* </b>IT and Systems Management</li>
+                              </ul>
+                           </div>
+                           <div class="course_text">
+                              <p><b>Program Duration :</b> 2 Year</p>
+                           </div>
+                           <div
+                              class="course_footer d-flex align-items-center justify-content-start"
+                           ></div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6">
+                     <div class="course">
+                        <div class="course_image">
+                           <img src="images/course_2.jpg" alt="" />
+                        </div>
+                        <div class="course_body" style="padding-bottom: 78px">
+                           <div class="course_title">
+                              <h3>
+                                 <a href="courses.html">PGDM Courses</a>
+                              </h3>
+                           </div>
+                           <div class="course_text">
+                              1 and 2 year-long diploma courses with the
+                              following specialization in collaboration with our
+                              academic partner NMIMS.
+                           </div>
+                           <div class="course_text">
+                              <ul>
+                                 <li><b>* </b> Human Resource Management</li>
+                                 <li><b>* </b>Financial Management</li>
+                                 <li><b>* </b>Supply Chain Management</li>
+                                 <li>
+                                    <b>* </b>Banking and Finance Management
+                                 </li>
+                                 <li><b>* </b>Marketing Management</li>
+                                 <li><b>* </b>Retail Management</li>
+                                 <li><b>* </b>Business Management</li>
+                                 <li><b>* </b>Operations Management</li>
+                                 <li>
+                                    <b>* </b>International Trade Management
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="course_text">
+                              <p>
+                                 <b>Program Duration :</b> 1 Year and 2 Years
+                              </p>
+                           </div>
+                           <div
+                              class="course_footer d-flex align-items-center justify-content-start"
+                           ></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <footer class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4 footer_col">
+                     <div class="footer_about">
+                        <div class="logo_container">
+                           <a href="#">
+                              <div
+                                 class="logo_content d-flex flex-row align-items-end justify-content-start"
+                              >
+                                 <div class="logo_img">
+                                    <img src="images/logo.png" alt="" />
+                                 </div>
+                                 <div class="logo_text">learn</div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="footer_about_text">
+                           <p>
+                              Education is the passport to a better future,
+                              opening doors of opportunity and unlocking your
+                              true potential.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 footer_col">
+                     <div class="footer_links">
+                        <div class="footer_title">Quick menu</div>
+                        <ul class="footer_list">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="courses.html">Courses</a></li>
+                           <li><a href="about.html">About us</a></li>
+
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 footer_col">
+                     <div class="footer_contact">
+                        <div class="footer_title">Contact Us</div>
+                        <div class="footer_contact_info">
+                           <div class="footer_contact_item">
+                              <div class="footer_contact_title">Address:</div>
+                              <div class="footer_contact_line">
+                                 34/3/A New Paccha Peth, Solapur
+                              </div>
+                           </div>
+                           <div class="footer_contact_item">
+                              <div class="footer_contact_title">Phone:</div>
+                              <div class="footer_contact_line">
+                                 +91 8180005161
+                              </div>
+                           </div>
+                           <div class="footer_contact_item">
+                              <div class="footer_contact_title">Email:</div>
+                              <div class="footer_contact_line">
+                                 dpaskanti@gmail.com
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <script
+         data-cfasync="false"
+         src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      ></script>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="styles/bootstrap4/popper.js"></script>
+      <script src="styles/bootstrap4/bootstrap.min.js"></script>
+      <script src="plugins/easing/easing.js"></script>
+      <script src="plugins/parallax-js-master/parallax.min.js"></script>
+      <script src="js/courses.js"></script>
+
+      <script
+         async
+         src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+      ></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+            dataLayer.push(arguments);
+         }
+         gtag("js", new Date());
+
+         gtag("config", "UA-23581568-13");
+      </script>
+      <script
+         defer
+         src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+         integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+         data-cf-beacon='{"rayId":"7d1e91d05a08f2eb","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
+         crossorigin="anonymous"
+      ></script>
+   </body>
+</html>
