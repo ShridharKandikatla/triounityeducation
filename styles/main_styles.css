@@ -430,7 +430,7 @@ section {
 }
 .logo_text {
    font-family: "Montserrat", serif;
-   font-size: 18px;
+   font-size: 12px;
    font-weight: 700;
    line-height: 0.75;
    margin-left: 1px;
@@ -640,7 +640,7 @@ section {
    margin-bottom: 60px;
 }
 .menu_nav ul li {
-   margin-bottom: 9px;
+   margin-bottom: 18px;
 }
 .menu_nav ul li a {
    font-size: 16px;
@@ -1276,13 +1276,14 @@ section {
 .grouped_sections {
    width: 100%;
    background: #ffffff;
-   padding-top: 89px;
+   padding-top: 60px;
    padding-bottom: 100px;
 }
 .grouped_title {
    font-size: 30px;
    font-weight: 600;
    color: #44425a;
+   padding-bottom: 20%;
 }
 .accordions {
    margin-bottom: 14px;
