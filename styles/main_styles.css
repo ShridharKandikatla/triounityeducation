@@ -416,7 +416,10 @@ section {
 /*********************************
 3.3 Logo
 *********************************/
-
+.hide-bg {
+   mix-blend-mode: multiply;
+   filter: contrast(1);
+}
 .logo,
 .logo_text {
    display: inline-block;
